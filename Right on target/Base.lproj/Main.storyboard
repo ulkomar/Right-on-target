@@ -42,6 +42,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35z-VI-giR">
+                                <rect key="frame" x="648.33333333333337" y="354" width="131.66666666666663" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="О программе"/>
+                                <connections>
+                                    <segue destination="Pbp-0r-J7U" kind="show" id="HBB-OT-clz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -49,12 +57,15 @@
                             <constraint firstItem="K1O-4W-mPY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="15O-6R-JBG"/>
                             <constraint firstItem="6Mp-Hh-Zmy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4BM-YZ-szY"/>
                             <constraint firstItem="TdF-J0-aWx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Xd-h3-xF8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="35z-VI-giR" secondAttribute="trailing" constant="20" id="cdF-4A-Xwr"/>
                             <constraint firstItem="6Mp-Hh-Zmy" firstAttribute="top" secondItem="TdF-J0-aWx" secondAttribute="bottom" constant="30" id="g9f-Xx-kUn"/>
+                            <constraint firstItem="35z-VI-giR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="gBS-Fl-V5g"/>
                             <constraint firstItem="TdF-J0-aWx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gr4-3n-eQQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TdF-J0-aWx" secondAttribute="trailing" constant="20" id="jBK-eX-Szl"/>
                             <constraint firstItem="K1O-4W-mPY" firstAttribute="top" secondItem="6Mp-Hh-Zmy" secondAttribute="bottom" constant="30" id="r1Z-EA-eys"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="SGM-zL-bl5"/>
                     <connections>
                         <outlet property="label" destination="K1O-4W-mPY" id="7cn-3S-an3"/>
                         <outlet property="slider" destination="TdF-J0-aWx" id="1d7-QW-ez5"/>
@@ -64,10 +75,43 @@
             </objects>
             <point key="canvasLocation" x="37" y="4"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Lts-RW-KDu">
+            <objects>
+                <viewController id="Pbp-0r-J7U" customClass="SecondViewController" customModule="Right_on_target" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6dH-pn-Qbp">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFI-PY-ofB">
+                                <rect key="frame" x="385" y="177.66666666666666" width="74" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Назад"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="M2a-Kz-LMA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HzO-8K-KVf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eFI-PY-ofB" firstAttribute="centerY" secondItem="6dH-pn-Qbp" secondAttribute="centerY" id="OYe-fN-75A"/>
+                            <constraint firstItem="eFI-PY-ofB" firstAttribute="centerX" secondItem="6dH-pn-Qbp" secondAttribute="centerX" id="g0Q-er-dkF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uiS-DF-7op"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2p-K8-Z5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="3"/>
+        </scene>
     </scenes>
     <resources>
         <image name="01.square.fill" catalog="system" width="128" height="114"/>
         <image name="50.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
