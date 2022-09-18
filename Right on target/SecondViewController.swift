@@ -37,6 +37,10 @@ class SecondViewController: UIViewController {
         super.viewDidDisappear(animated)
         print("Second viewDidDisappear")
     }
+    
+    @IBAction func closeScreen() {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

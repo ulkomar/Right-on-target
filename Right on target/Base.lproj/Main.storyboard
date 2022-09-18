@@ -47,7 +47,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="О программе"/>
                                 <connections>
-                                    <segue destination="Pbp-0r-J7U" kind="show" id="HBB-OT-clz"/>
+                                    <action selector="showNextScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="MTp-wW-U3h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -78,7 +78,7 @@
         <!--Second View Controller-->
         <scene sceneID="Lts-RW-KDu">
             <objects>
-                <viewController id="Pbp-0r-J7U" customClass="SecondViewController" customModule="Right_on_target" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pbp-0r-J7U" customClass="SecondViewController" customModule="Right_on_target" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6dH-pn-Qbp">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Назад"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="M2a-Kz-LMA"/>
+                                    <action selector="closeScreen" destination="Pbp-0r-J7U" eventType="touchUpInside" id="8OG-Md-AUm"/>
                                 </connections>
                             </button>
                         </subviews>
